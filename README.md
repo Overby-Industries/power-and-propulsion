@@ -1,4 +1,4 @@
-# Power and Propulsion
+# ⚡ Power and Propulsion
 
 **Overby Industries — Project Power & Propulsion**  
 *A new dawn is upon us, a new era of electric power and spacecraft thrust.*
