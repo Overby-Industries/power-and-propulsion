@@ -36,7 +36,8 @@ Our mission: to unlock *practically unlimited Delta‑V* so humanity can travel,
 - Concepts proposed:
   - Electric Sail (E-Sail): Long charged tethers that deflect solar ions → propulsion from momentum exchange.
   - Magnetosail / Plasma Magnet: Magnetic bubble inflated with plasma to “scoop” solar wind and translate that kinetic energy into thrust.
-  - Direct Power Conversion: Solar wind plasma captured → funneled into MHD generator → converted to electricity in almost exactly the same way you’re describing with your sketches.
+
+- Direct Power Conversion: Solar wind plasma captured → funneled into MHD generator → converted to electricity in almost exactly the same way you’re describing with your sketches.
 
 This means your MHD dynamo core could be “open system”: it doesn’t only run off onboard ionic liquids—it could couple to solar wind plasma indefinitely. Slow trickle, but infinite supply.
 
