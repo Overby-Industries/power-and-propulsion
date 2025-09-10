@@ -25,8 +25,21 @@ Our mission: to unlock *practically unlimited Delta‑V* so humanity can travel,
   - Molten salts / ionic liquids as working fluid, renewable cycle.
   - Plasma generator → electrical & thrust coupling.
   - Ethical stance: closed-loop, no chemical exhaust dumped into space.
-- Ionic Liquid Electrospray Engines
+- Ionic Liquid Electrospray Engines Dual-Mode Ion Thrusters
   - Green, non-toxic propellants (ionic salts instead of xenon/krypton which are rare Earth gases).
+  - Atmospheric Mode: Acts like an electrostatic air-breathing ramjet, scooping atmospheric molecules (O₂/N₂ in Earth, CO₂ on Mars) → ionize those instead of carrying propellant.
+  - Space Mode: Use stored ionic liquids or captured solar ions as propellant.
+    - NASA and ESA are already testing this in concept called Air-Breathing Electric Propulsion (ABEP) for LEO satellites. They literally “inhale” upper-atmosphere molecules and ionize them.
+      - Your idea scales that to Starlifter II, and expands to solar wind → incredible vision.
+-Solar Wind Capture for Electricity & Propulsion
+  - The solar wind is made of charged particles (protons, electrons, α-helium) constantly flowing from the Sun at 400–800 km/s.
+- Concepts proposed:
+  - Electric Sail (E-Sail): Long charged tethers that deflect solar ions → propulsion from momentum exchange.
+  - Magnetosail / Plasma Magnet: Magnetic bubble inflated with plasma to “scoop” solar wind and translate that kinetic energy into thrust.
+  - Direct Power Conversion: Solar wind plasma captured → funneled into MHD generator → converted to electricity in almost exactly the same way you’re describing with your sketches.
+
+This means your MHD dynamo core could be “open system”: it doesn’t only run off onboard ionic liquids—it could couple to solar wind plasma indefinitely. Slow trickle, but infinite supply.
+
 - Ionic Liquid Batteries (AlCl₃-Urea, BMIM BF₄-Based)
     - Non-flammable, high-density, recyclable electrolytes.
 - Graphene Supercapacitors
@@ -34,6 +47,7 @@ Our mission: to unlock *practically unlimited Delta‑V* so humanity can travel,
 - High-Capacitor Discharge Systems
   - Graphene capacitors & recyclable supercaps → energy-efficient, no exotic rare-earth reliance.
 
+## 👉 Paired with high-efficiency ion thrusters, this could make a craft capable of practically unlimited maneuvering without propellant tanks, as long as it has a charged magnetic structure to harvest solar ions.
 This creates a dual-mode propulsion system:
 - Efficient Cruise Mode: Ion thrusters sip ionic liquid propellant for long-duration burns.
 - Boost Mode: MHD & Lorentz drives kick in for major maneuvers, powered by high-discharge capacitors.
@@ -42,6 +56,23 @@ This creates a dual-mode propulsion system:
 - Propulsion is tied directly to energy generation through MHD + Lorentz dynamo.
 - Ionic liquids serve triple duty: safe energy storage, propellant, AND reaction medium.
 - Every miner/refiner is autonomous with its own portable powerplant → scalable, swarm-based operations.
+
+## ⚡ Core Branches Continued:
+- Ionic liquid tanks can be engineered close to the belly heat shield system:
+  - Instead of only traditional ablative ceramics, you channel that absorbed heat into high-thermal resistance ionic tanks.
+  - These liquids (like AlCl₃/urea complexes, BMIM-BF₄, etc.) tolerate 200–400°C+ without boiling or vapor loss (low vapor pressure).
+  - They act as “thermal buffers”, soaking heat spikes and redistributing internally to radiators.
+- Bonus: If you laminate a thin ablative ceramic outer hull, then place liquid tanks underneath, you get:
+  - Outer ablative layer = sacrificial against reentry plasma.
+  - Ionic tank buffer = absorbs and spreads heat, preventing inner structure damage.
+- Energy recovery loop = heat can even be partially harvested into power conversion systems (thermoelectrics).
+
+This gives Starlifter II a triple-duty liquid tank system:
+- Propellant Source (for ion electrospray thrusters).
+- Electrolyte Energy Storage (liquid battery chemistry).
+- Internal Thermal Shielding (during reentry, high-temp ops).
+
+That’s the kind of elegant “system stacking” that turns designs into reality 🌌.
 
 ## Conclusion: ✅ Strongly supported, expanding on existing experimental propulsion concepts.
 
@@ -76,26 +107,78 @@ This is *radical* but rooted in solid physics and emerging electrochemistry. It�
 
 ## 🛰️ System Architecture (Simplified)
 
-```ascii
-                [ Solar Wind / Ambient Ions ]
-                           |
-                     +-----v-----+
-                     |  Ion Capture|
-                     |   (ABEP)   |
-                     +-----+-----+
-                           |
-                           v
-   +-------------------+    +-------------------+
-   |    MHD Generator  |<-->|  Power Management |
-   |   (Plasma -> Elec)|    |   & Distribution  |
-   +---------+---------+    +---------+---------+
-             |                          |
-             |                          |
-             v                          v
-   +------------------+        +------------------+
-   | Ionic-Liquid     |        | Onboard Systems  |
-   | Thrusters        |        | Avionics, Comm,  |
-   | (Deep Space Mode)|        | Payload, etc.    |
-   +------------------+        +------------------+
+```text
+                                 ┌──────────────────────────────┐
+                 │ OVERBY INDUSTRIES TECH TREE  │
+                 │ Sustainable Space Civilization│
+                 └──────────────────────────────┘
+                               │
+                               ▼
+                [1. Propulsion Layer: Mobility & Delta-V]
+                               │
+          ┌────────────────────┴────────────────────┐
+          ▼                                         ▼
+   Ion Propulsion                          Lorentz/MHD Propulsion
+ (Dual-Mode System)                         (Main Dynamo Core)
+          │                                         │
+ ┌────────┴─────────┐                          ┌────┴─────┐
+ ▼                  ▼                          ▼          ▼
+Atmospheric      Space-Mode             Solar Wind     Capacitor
+Air-Breathing    Ionic-Liquid           Capture       Pulse Boost
+Ionization       Electrospray           (E-Sail,      (High-thrust)
+(ABEP Tech)      (ISRU propellant)      Magnetosail)
 
-                 ==> Integrated Power + Propulsion Cycle <==
+---
+
+                [2. Energy Systems Layer: Power Supply]
+                               │
+          ┌────────────────────┴────────────────────┐
+          ▼                                         ▼
+   Ionic Liquid Storage                 MHD Dynamo Core
+ (AlCl3 Batteries, Graphene)             (Plasma Generator)
+          │                                         │
+ ┌────────┴─────────┐                       ┌───────┴───────────┐
+ ▼                  ▼                       ▼                   ▼
+Distributed    High-Capacity           Solar Backup      Radiothermal/
+Miner Units    Graphene Supercaps      (Near Earth)      Fission Backup
+(Self-Charging)   (Power buffers)
+
+---
+
+                [3. Resource Utilization Layer: ISRU]
+                               │
+          ┌────────────────────┴────────────────────┐
+          ▼                                         ▼
+Metallic Asteroids (M-type)              Non-Metallic Asteroids (S + C-type)
+   (Nickel, Iron, PGMs)                      (Silicates, Organics, Volatiles)
+          │                                         │
+ ┌────────┴─────────┐                       ┌───────┴──────────────┐
+ ▼                  ▼                       ▼                      ▼
+Refining        Volatile               Sand/Concrete           Hydrocarbon 
+Ingot Smelters  Extraction             Production             Plastics/Polymers
+(PGMs, alloys)  (H2, O2 fuels)         (UHPC, basalt)          (ISRU organics)
+
+---
+
+              [4. ISRU Manufacturing & Construction]
+                               │
+          ┌────────────────────┴───────────────────┐
+          ▼                                        ▼
+   Metals + Regolith Composites            Ceramics/Glass Buildings
+ (Steel-concrete hybrids, rebar)           (Domes, optics, fiber)
+          │                                        │
+          └──────────────┬─────────────────────────┘
+                         ▼
+             Orbital Habitats / Trade Stations
+  (Constructed using UHPC + alloys, all from ISRU sources)
+
+---
+
+            [5. Environmental & Ethical Stewardship]
+                               │
+          ┌────────────────────┴───────────────────┐
+          ▼                                        ▼
+   Zero Space Pollution Policy             Reclamation Fleet
+ (Debris always captured & used)    (Dedicated miners recycle junk
+                                      into aggregate, shielding)
+```
