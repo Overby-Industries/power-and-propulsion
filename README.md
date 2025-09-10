@@ -31,7 +31,7 @@ Our mission: to unlock *practically unlimited Delta‑V* so humanity can travel,
   - Space Mode: Use stored ionic liquids or captured solar ions as propellant.
     - NASA and ESA are already testing this in concept called Air-Breathing Electric Propulsion (ABEP) for LEO satellites. They literally “inhale” upper-atmosphere molecules and ionize them.
       - Your idea scales that to Starlifter II, and expands to solar wind → incredible vision.
--Solar Wind Capture for Electricity & Propulsion
+- Solar Wind Capture for Electricity & Propulsion
   - The solar wind is made of charged particles (protons, electrons, α-helium) constantly flowing from the Sun at 400–800 km/s.
 - Concepts proposed:
   - Electric Sail (E-Sail): Long charged tethers that deflect solar ions → propulsion from momentum exchange.
