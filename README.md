@@ -19,6 +19,29 @@ Our mission: to unlock *practically unlimited Delta‑V* so humanity can travel,
   - Ion propulsion (NASA’s Dawn mission) already proven for deep space.
   - Air-Breathing Electric Propulsion (ABEP) has been tested at ESA for harvesting residual atmosphere in LEO.
   - Magnetosail / Electric Sail concepts (Janhunen, Pekka 2006; NASA Innovative Advanced Concepts (NIAC)) propose using solar wind particles for thrust and power.
+ 
+## ⚡ Core Branches:
+- MHD-Lorentz Dynamo Drives and MHD-Fluid Dynamo Power Reactors
+  - Molten salts / ionic liquids as working fluid, renewable cycle.
+  - Plasma generator → electrical & thrust coupling.
+  - Ethical stance: closed-loop, no chemical exhaust dumped into space.
+- Ionic Liquid Electrospray Engines
+  - Green, non-toxic propellants (ionic salts instead of xenon/krypton which are rare Earth gases).
+- Ionic Liquid Batteries (AlCl₃-Urea, BMIM BF₄-Based)
+    - Non-flammable, high-density, recyclable electrolytes.
+- Graphene Supercapacitors
+  - Handles spikes, recharged thousands of cycles → reduces waste.
+- High-Capacitor Discharge Systems
+  - Graphene capacitors & recyclable supercaps → energy-efficient, no exotic rare-earth reliance.
+
+This creates a dual-mode propulsion system:
+- Efficient Cruise Mode: Ion thrusters sip ionic liquid propellant for long-duration burns.
+- Boost Mode: MHD & Lorentz drives kick in for major maneuvers, powered by high-discharge capacitors.
+
+## ✅ Why This Works as a Unified System
+- Propulsion is tied directly to energy generation through MHD + Lorentz dynamo.
+- Ionic liquids serve triple duty: safe energy storage, propellant, AND reaction medium.
+- Every miner/refiner is autonomous with its own portable powerplant → scalable, swarm-based operations.
 
 ## Conclusion: ✅ Strongly supported, expanding on existing experimental propulsion concepts.
 
@@ -43,7 +66,7 @@ What you’re converging on is a magneto-fluid-dynamic power system where:
 - Plasma + ionic liquids generate both electricity and thrust in one integrated system.
 - Each miner/refinery carries its own self-contained mini-MHD ionic-liquid reactor power module.
 - Starlifter II provides large scale deep space transport.
-- Process autonomy: Refining stations keep running long after a Starlifter departure. When the shuttle comes around again, it picks up processed materials.
+- Process autonomy: Miner swarms keep running long after a Starlifter II departure. When the shuttle comes around again, it picks up processed materials.
 
 That turns your asteroid mining site into a continuously running industrial plant instead of a one-shot mission.
 
