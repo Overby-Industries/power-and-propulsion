@@ -43,7 +43,7 @@ This means your MHD dynamo core could be “open system”: it doesn’t only ru
 
 ## 👉 Paired with high-efficiency ion thrusters, this could make a craft capable of practically unlimited maneuvering without propellant tanks, as long as it has a charged magnetic structure to harvest solar ions.
 This creates a dual-mode propulsion system:
-- Efficient Cruise Mode: Ion thrusters sip ionic liquid propellant for long-duration burns.
+- Efficient Cruise Mode: Dual-mode ion thrusters sip ionic liquid propellant or use captured solar wind plasma directly for long-duration burns.
 - Boost Mode: MHD & Lorentz drives kick in for major maneuvers, powered by high-discharge capacitors.
 
 ## ✅ Why This Works as a Unified System
