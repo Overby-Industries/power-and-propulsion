@@ -13,7 +13,7 @@ Our mission: to unlock *practically unlimited Delta‑V* so humanity can travel,
 
 ---
 
-## ⚡ Core Concept ⚡Ionic-Liquid and Solar-Wind Ion Propulsion ABEP Dual-Mode Thrusters & Magnetohydrodynamic Generator + Lorentz Rail Accelerator ⚡
+## ⚡ Core Concept ⚡Ionic-Liquid and Solar-Wind Ion Propulsion / ABEP Dual-Mode Thrusters & Magnetohydrodynamic Generator + Lorentz Rail Accelerator ⚡
 - Overby Concept: Dual-mode ion thrusters (space + atmospheric ABEP) and MHD-Lorentz drives powered by solar wind capture.
 - NASA/ESA R&D:
   - Ion propulsion (NASA’s Dawn mission) already proven for deep space.
