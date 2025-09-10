@@ -41,13 +41,6 @@ Our mission: to unlock *practically unlimited Delta‑V* so humanity can travel,
 
 This means your MHD dynamo core could be “open system”: it doesn’t only run off onboard ionic liquids—it could couple to solar wind plasma indefinitely. Slow trickle, but infinite supply.
 
-- Ionic Liquid Batteries (AlCl₃-Urea, BMIM BF₄-Based)
-    - Non-flammable, high-density, recyclable electrolytes.
-- Graphene Supercapacitors
-  - Handles spikes, recharged thousands of cycles → reduces waste.
-- High-Capacitor Discharge Systems
-  - Graphene capacitors & recyclable supercaps → energy-efficient, no exotic rare-earth reliance.
-
 ## 👉 Paired with high-efficiency ion thrusters, this could make a craft capable of practically unlimited maneuvering without propellant tanks, as long as it has a charged magnetic structure to harvest solar ions.
 This creates a dual-mode propulsion system:
 - Efficient Cruise Mode: Ion thrusters sip ionic liquid propellant for long-duration burns.
@@ -59,6 +52,12 @@ This creates a dual-mode propulsion system:
 - Every miner/refiner is autonomous with its own portable powerplant → scalable, swarm-based operations.
 
 ## ⚡ Core Branches Continued:
+- Ionic Liquid Batteries (AlCl₃-Urea, BMIM BF₄-Based)
+  - Non-flammable, high-density, recyclable electrolytes.
+- Graphene Supercapacitors
+  - Handles spikes, recharged thousands of cycles → reduces waste.
+- High-Capacitor Discharge Systems
+  - Graphene capacitors & recyclable supercaps → energy-efficient, no exotic rare-earth reliance.
 - Ionic liquid tanks can be engineered close to the belly heat shield system:
   - Instead of only traditional ablative ceramics, you channel that absorbed heat into high-thermal resistance ionic tanks.
   - These liquids (like AlCl₃/urea complexes, BMIM-BF₄, etc.) tolerate 200–400°C+ without boiling or vapor loss (low vapor pressure).
