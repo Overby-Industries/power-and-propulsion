@@ -24,7 +24,7 @@ Our mission: to unlock *practically unlimited Delta‑V* so humanity can travel,
 - MHD-Lorentz Dynamo Drives and MHD-Fluid Dynamo Power Reactors
   - Molten salts / ionic liquids as working fluid, renewable cycle.
   - Plasma generator → electrical & thrust coupling.
-  - Ethical stance: closed-loop, no chemical exhaust dumped into space.
+    - Ethical stance: closed-loop, no chemical exhaust dumped into space.
 - Ionic Liquid Electrospray Engines Dual-Mode Ion Thrusters
   - Green, non-toxic propellants (ionic salts instead of xenon/krypton which are rare Earth gases).
   - Atmospheric Mode: Acts like an electrostatic air-breathing ramjet, scooping atmospheric molecules (O₂/N₂ in Earth, CO₂ on Mars) → ionize those instead of carrying propellant.
