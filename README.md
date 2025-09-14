@@ -114,6 +114,27 @@ Putting it all together:
   - Serve as Al-ion “batteries” → energy storage + redundancy.
 - Propellant-light deep space: With solar wind + reclaimed volatiles → high Delta-V, continuous operation, minimal resupply from Earth.
 
+```mermaid
+flowchart LR
+
+subgraph Generator_Mode [MHD Generator Mode]
+    A[Inflow Plasma / Ionic Liquid] --> B{MHD Channel}
+    B -->|Induces Current| C[Electrodes & Coils]
+    C --> D[Graphene Supercapacitors]
+    C --> E[Aluminum-Ion Tanks]
+    D -->|Power| F[Payload Systems]
+    E -->|Storage| F
+end
+
+subgraph Thruster_Mode [Lorentz Thrust Mode]
+    A2[Inflow Plasma / Ionic Liquid] --> B2{MHD Channel}
+    B2 -->|Lorentz Force Accelerates| C2[Plasma Exhaust]
+    C2 --> D2[Reaction: ΔV Forward Thrust]
+end
+
+F -->|Discharge| B2
+```
+
 ## ✅ With smart hybridization ion thrusters can indeed operate dual-mode 
 - in atmosphere (air-breathing ABEP)
 - in space (ionic liquid-fed mode)
