@@ -1,0 +1,95 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "ellipse",
+      "version": 62,
+      "versionNonce": 12345,
+      "isDeleted": false,
+      "id": "chamber-circle",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "stroke": "#000000",
+      "backgroundColor": "transparent",
+      "width": 300,
+      "height": 200,
+      "x": 100,
+      "y": 100
+    },
+    {
+      "type": "arrow",
+      "version": 25,
+      "id": "ion-exit",
+      "x": 400,
+      "y": 180,
+      "width": 150,
+      "height": 0,
+      "stroke": "#FF0000",
+      "points": [[0,0],[150,0]],
+      "label": "Thrust Out",
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "rotation-arrow-1",
+      "x": 200,
+      "y": 150,
+      "width": 50,
+      "height": 50,
+      "stroke": "#3333FF",
+      "points": [[0,0],[50,0],[50,50]],
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "rotation-arrow-2",
+      "x": 220,
+      "y": 220,
+      "width": 50,
+      "height": 50,
+      "stroke": "#3333FF",
+      "points": [[50,0],[0,50]],
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle",
+      "id": "coil-wrapper",
+      "x": 75,
+      "y": 75,
+      "width": 350,
+      "height": 250,
+      "stroke": "#00AA00",
+      "strokeWidth": 2,
+      "fillStyle": "cross-hatch"
+    },
+    {
+      "type": "text",
+      "id": "coil-label",
+      "x": 90,
+      "y": 60,
+      "text": "Outer Electromagnetic Coil",
+      "fontSize": 20,
+      "stroke": "#00AA00"
+    },
+    {
+      "type": "text",
+      "id": "liquid-label",
+      "x": 170,
+      "y": 250,
+      "text": "Spinning Ionic Liquid (MHD zone)",
+      "fontSize": 18,
+      "stroke": "#3333FF"
+    },
+    {
+      "type": "text",
+      "id": "current-label",
+      "x": 220,
+      "y": 50,
+      "text": "Electric Current Harvested",
+      "fontSize": 20,
+      "stroke": "#FF8800"
+    }
+  ]
+}
