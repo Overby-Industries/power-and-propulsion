@@ -1,0 +1,45 @@
+name: Build & Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  sim:
+    name: sim/ (CMake + ctest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S sim -B sim/build -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build sim/build --config Release
+
+      - name: Test
+        run: ctest --test-dir sim/build --output-on-failure
+
+      - name: Run sizing demo
+        run: ./sim/build/opp_sim_demo
+
+  firmware:
+    name: firmware/ (PlatformIO)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install PlatformIO
+        run: pip install --upgrade platformio
+
+      - name: Build Arduino Uno target
+        run: pio run -e uno
+
+      - name: Run native FSM logic tests
+        run: pio test -e native

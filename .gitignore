@@ -1,0 +1,14 @@
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# CMake
+sim/build/
+
+# Python
+__pycache__/
+*.pyc
+
+# Blender autosave
+*.blend1
