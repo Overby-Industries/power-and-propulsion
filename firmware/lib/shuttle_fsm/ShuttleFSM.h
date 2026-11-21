@@ -31,6 +31,20 @@ public:
   void begin(uint32_t nowMillis);
   void update(const ShuttleSensors& sensors, uint32_t nowMillis);
 
+  // Hand the FSM one command from the ground, when it arrives. Returns true if
+  // it caused a transition and false if it was ignored.
+  //
+  // A command is valid from exactly one state (see GroundCommand), so
+  // repeating it, or sending it at the wrong moment, does nothing -- and a
+  // caller that holds one across several ticks cannot chain the FSM through
+  // phases it did not mean to skip.
+  //
+  // Nothing is accepted while `sensors.faultDetected` is true, CmdRecover
+  // included: a fault outranks the ground, and recovery over a standing fault
+  // would only abort again on the next update(). Recovery goes to Maintenance,
+  // never straight back into flight.
+  bool command(GroundCommand cmd, const ShuttleSensors& sensors, uint32_t nowMillis);
+
   ShuttleState state() const { return currentState; }
   MHDSubState mhdSubState() const { return mhdSub; }
   uint32_t timeInState(uint32_t nowMillis) const { return nowMillis - lastStateChange; }

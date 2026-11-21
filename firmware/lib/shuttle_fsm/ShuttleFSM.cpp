@@ -65,7 +65,8 @@ void ShuttleFSM::update(const ShuttleSensors& sensors, uint32_t nowMillis) {
 
     case OrbitalCruise:
       // Station-keeping, solar-wind trickle harvesting, OTF-1 telemetry
-      // reporting. Ground-commanded transition to PayloadDeployment.
+      // reporting. Ground-commanded transition to PayloadDeployment
+      // (CmdDeployPayload, see command()).
       break;
 
     case PayloadDeployment:
@@ -89,6 +90,50 @@ void ShuttleFSM::update(const ShuttleSensors& sensors, uint32_t nowMillis) {
       // Diagnostics, logging.
       break;
   }
+}
+
+bool ShuttleFSM::command(GroundCommand cmd, const ShuttleSensors& sensors, uint32_t nowMillis) {
+  // A fault outranks the ground. Handled before anything else so that no
+  // command, recovery included, gets past a standing fault.
+  if (sensors.faultDetected) {
+    OPP_LOG("Ground command ignored - fault standing");
+    return false;
+  }
+
+  ShuttleState target = currentState;
+  switch (cmd) {
+    case CmdDeployPayload:
+      if (currentState == OrbitalCruise) target = PayloadDeployment;
+      break;
+    case CmdBeginReentry:
+      if (currentState == PayloadDeployment) target = Reentry;
+      break;
+    case CmdBeginApproach:
+      if (currentState == Reentry) target = ApproachAndLanding;
+      break;
+    case CmdLandingComplete:
+      if (currentState == ApproachAndLanding) target = Maintenance;
+      break;
+    case CmdRecover:
+      // Out of AbortSafeMode, deliberately and only by this. To Maintenance
+      // (diagnostics) and not back to a flight phase: a vehicle that has just
+      // safed itself is inspected before it is anything else.
+      if (currentState == AbortSafeMode) target = Maintenance;
+      break;
+    case CmdReturnToIdle:
+      if (currentState == Maintenance) target = GroundIdle;
+      break;
+    case CmdNone:
+    default:
+      break;
+  }
+
+  if (target == currentState) {
+    OPP_LOG("Ground command ignored - not valid in this state");
+    return false;
+  }
+  transitionTo(target, nowMillis);
+  return true;
 }
 
 void ShuttleFSM::transitionTo(ShuttleState newState, uint32_t nowMillis) {
